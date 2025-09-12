@@ -1,0 +1,35 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- # Metadatos básicos y enlace al CSS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- # Bloque de título; permite que las páginas hijas lo reemplacen -->
+  <title>{% block title %}{{ titulo or "Mi App Flask" }}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <!-- # Barra de navegación simple con enlaces -->
+  <header class="navbar">
+    <nav class="container">
+      <a href="{{ url_for('index') }}">Inicio</a>
+      <a href="{{ url_for('about') }}">Acerca de</a>
+      <a href="{{ url_for('contacto') }}">Contacto</a>
+      <a href="{{ url_for('mostrar_direccion') }}">Dirección</a>
+    </nav>
+  </header>
+
+  <!-- # Contenedor principal. El bloque 'content' será definido por cada página hija -->
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- # Pie de página común a todas las páginas -->
+  <footer class="footer">
+    <div class="container">
+      <small>&copy; 2025 · Mi Proyecto Flask</small>
+    </div>
+  </footer>
+</body>
+</html>
