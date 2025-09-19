@@ -1,0 +1,17 @@
+<!-- templates/about.html -->
+{% extends "base.html" %}
+
+{% block title %}{{ titulo or "Acerca de" }}{% endblock %}
+
+{% block content %}
+  <!-- # Sección de información "Acerca de" -->
+  <h1>Acerca de</h1>
+  <p>Este proyecto Flask demuestra cómo usar plantillas, herencia y archivos estáticos.</p>
+
+  <!-- # Lista breve de tecnologías usadas -->
+  <ul>
+    <li>Flask</li>
+    <li>Jinja (plantillas)</li>
+    <li>CSS en <code>static/styles.css</code></li>
+  </ul>
+{% endblock %}

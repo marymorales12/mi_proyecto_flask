@@ -1,0 +1,17 @@
+# # Entornos virtuales
+venv/
+.env
+
+# # Cachés de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# # Configuración de editores/SO
+.vscode/
+.idea/
+.DS_Store
+
+# # Carpeta de instancia (si la usas)
+instance/

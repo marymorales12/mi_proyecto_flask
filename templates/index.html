@@ -1,0 +1,17 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% block title %}{{ titulo or "Inicio" }}{% endblock %}
+
+{% block content %}
+  <!-- # Título de bienvenida -->
+  <h1>¡Hola! Bienvenido a mi aplicación Flask.</h1>
+
+  <!-- # Si viene un nombre desde /usuario/<nombre>, lo mostramos aquí -->
+  {% if saludo_para %}
+    <p>Bienvenido, <strong>{{ saludo_para }}</strong>!</p>
+  {% endif %}
+
+  <!-- # Contenido de ejemplo -->
+  <p>Esta página usa una plantilla base y herencia con Jinja.</p>
+{% endblock %}
