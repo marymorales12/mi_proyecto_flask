@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # # Dependencias del proyecto
 Flask>=3.0,<4
 mysql-connector-python==9.0.0
+=======
+# # Dependencias del proyecto
+Flask>=3.0,<4
+mysql-connector-python==9.0.0
+>>>>>>> 613a850e6860e90b556a694f992658c14fdecd01
 python-dotenv==1.0.1
