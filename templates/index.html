@@ -1,37 +1,8 @@
-<<<<<<< HEAD
-<!-- templates/index.html -->
-{% extends "base.html" %}
-
-{% block title %}{{ titulo or "Inicio" }}{% endblock %}
+{% extends "base.html"%}
+{% block title %}Inicio{% endblock %}
 
 {% block content %}
-  <!-- # Título de bienvenida -->
-  <h1>¡Hola! Bienvenido a mi aplicación Flask.</h1>
-
-  <!-- # Si viene un nombre desde /usuario/<nombre>, lo mostramos aquí -->
-  {% if saludo_para %}
-    <p>Bienvenido, <strong>{{ saludo_para }}</strong>!</p>
-  {% endif %}
-
-  <!-- # Contenido de ejemplo -->
-  <p>Esta página usa una plantilla base y herencia con Jinja.</p>
+<h1>Bienvenido a mi sitio Flask</h1>
+<p>Esta es la página de inicio de mi aplicación Flask.</p>
+<p>Utiliza el menú de navegación para explorar más.</p>
 {% endblock %}
-=======
-<!-- templates/index.html -->
-{% extends "base.html" %}
-
-{% block title %}{{ titulo or "Inicio" }}{% endblock %}
-
-{% block content %}
-  <!-- # Título de bienvenida -->
-  <h1>¡Hola! Bienvenido a mi aplicación Flask.</h1>
-
-  <!-- # Si viene un nombre desde /usuario/<nombre>, lo mostramos aquí -->
-  {% if saludo_para %}
-    <p>Bienvenido, <strong>{{ saludo_para }}</strong>!</p>
-  {% endif %}
-
-  <!-- # Contenido de ejemplo -->
-  <p>Esta página usa una plantilla base y herencia con Jinja.</p>
-{% endblock %}
->>>>>>> 613a850e6860e90b556a694f992658c14fdecd01
