@@ -30,7 +30,7 @@
         <a class="navbar-brand d-flex align-items-center" href="{{ url_for('index') }}">
           <!-- Imagen del logo -->
           <img src="{{ url_for('static', filename='img/logo.png') }}"
-              alt="Logo de {{ config['NOMBRE_SITIO'] if config and 'NOMBRE_SITIO' in config else 'AmazoniaMarket' }}"
+              alt="Logo de {{ config['NOMBRE_SITIO'] if config and 'NOMBRE_SITIO' in config else 'Mi logo de  sitio' }}"
               style="height: 48px;" loading="lazy">
           <span class="ms-1">{{ config['NOMBRE_SITIO'] if config and 'NOMBRE_SITIO' in config else 'AmazoniaMarket' }}</span>
         </a>
@@ -111,7 +111,7 @@
   <footer class="bg-dark text-white text-center py-3 mt-auto" role="contentinfo">
     <div class="container">
       <!-- Puedes personalizar el texto del footer aquí -->
-      <p class="mb-0">© {{ now().year }} {{ config['NOMBRE_SITIO'] if config and 'NOMBRE_SITIO' in config else 'AmazoniaMarket' }} - Todos los derechos reservados.</p>
+      <p class="mb-0">© {{ now().year }} {{ config['NOMBRE_SITIO'] if config and 'NOMBRE_SITIO' in config else 'My sitio' }} - Todos los derechos reservados.</p>
     </div>
   </footer>
 

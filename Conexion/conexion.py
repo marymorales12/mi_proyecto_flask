@@ -6,7 +6,7 @@ from mysql.connector import Error
 
 def conexion():
     return mysql.connector.connect(
-        host='192.168.10.114',
+        host='localhost',
         database='desarrollo_web',
         user='root',  # luego en producción usa variable de entorno
         password='' # luego en producción usa variable de entorno
